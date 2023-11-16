@@ -19,9 +19,9 @@ export async function getMarkdownContent<T extends ParsedContent>(event: H3Event
     files
       .filter(file =>
         file._extension === 'md'
-          && !file?._draft
-          && !file?.empty
-          && !file?._partial),
+        && !file?._draft
+        && !file?.empty
+        && !file?._partial),
   )
 
   return filteredFiles
